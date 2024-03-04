@@ -1,0 +1,54 @@
+/*
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question
+WHEN I answer a question
+THEN I am presented with another question
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+WHEN the game is over
+THEN I can save my initials and score
+*/
+
+SHOW the rules of the quiz and title of the quiz
+SHOW start button on page load
+SHOW score count
+WHEN the user clicks the start button
+    start timer
+    WHEN timer starts
+        SHOW timer count on the page
+        Run the timer
+        if the timer is equal to 0
+            stop the timer
+            end the quiz
+        endif
+        if all questions have been answered and submit button is clicked
+            stop the timer
+            end the quiz
+    SHOW the first question
+        get all the questions in an array
+        loop through the questions and show the first one
+        endloop
+    when an answer is selected
+        if answer matches correct answer
+            display "correct"
+            update score count
+        else
+            display "not correct"
+            update score count
+            subtract time from clock
+    when the next button is clicked
+        loop through the questions 
+            show the next question
+            if the question is the last one
+                show the submit button
+                donot show the next button
+            endif
+        endloop
+    when submit button is clicked or timer reaches 0
+        update score count
+        ask user for initials
+        save initials to local storage
+        save score to local storage
