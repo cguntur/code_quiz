@@ -25,6 +25,7 @@ var initalsInput = document.querySelector(".initials");
 var scoresEl = document.querySelector(".show_scores");
 var displayScoresEl = document.querySelector(".display_score");
 var highScoresEl = document.querySelector("#high_scores");
+var instructionsEl = document.querySelector(".instructions");
 
 //get the button elements
 var nextQuestionButton = document.querySelector("#next_question");
@@ -71,6 +72,9 @@ function startQuiz(){
     
     //Call the start timer function
     startTimer();
+
+    //Hide the instructions
+    instructionsEl.classList.add("hide");
 
     //Show the first question
     showQuestion();
@@ -195,6 +199,10 @@ function updateScore(isCorrectAnswer){
         score += 1;
     }else{
         score -= 1;
+    }
+
+    if(score < 0){
+        score = 0;
     }
     scoreEl.innerHTML = score;
 }
