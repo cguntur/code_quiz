@@ -17,44 +17,89 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <h1 class="title">JavaScript Quiz</h1>
-
+        
         <section id="quiz">
-            <p>Click on the start button to answer questions. If your answer is incorrect 5 seconds will be deducte from your timer.</p>
+            <p><a href="high_scores.html" target="_blank">View High Scores</a></p>
+            <h2 class="instructions">Click on the start button to answer questions. If your answer is incorrect 5 seconds will be deducted from your timer.</h2>
             <div class="questions_container">
                 <div id="score">
                     <p>Score: <span class="score_count">0</span></p>
                 </div>
                 <p class="timer_count"></p>
                 <div class="question hide">
-                    <p>Question One</p>
-                    <label for="question_one" class="question_label">Answer One</label>
-                    <input type="radio" name="question_one" class="question_radio" value="Answer One" data-correct="yes"/>
-                    <label for="question_one" class="question_label">Answer Two</label>
-                    <input type="radio" name="question_one" class="question_radio" value="Answer Two" data-correct="no"/>
-                    <label for="question_one" class="question_label">Answer Three</label>
-                    <input type="radio" name="question_one" class="question_radio" value="Answer Three" data-correct="no"/>
-                    <label for="question_one" class="question_label">Answer Four</label>
-                    <input type="radio" name="question_one" class="question_radio" value="Answer Four" data-correct="no"/>
-                </div>
+                    <p>Pick the fruit that is yellow.</p>
+                    
+                    <input type="radio" name="question_one" class="question_radio" value="Banana" data-correct="yes"/>
+                    <label for="question_one" class="question_label">Banana</label><br />
+                    <input type="radio" name="question_one" class="question_radio" value="Apple" data-correct="no"/>
+                    <label for="question_one" class="question_label">Apple</label><br />
+                    <input type="radio" name="question_one" class="question_radio" value="Orange" data-correct="no"/>
+                    <label for="question_one" class="question_label">Orange</label><br />
+                    <input type="radio" name="question_one" class="question_radio" value="Grapes" data-correct="no"/>
+                    <label for="question_one" class="question_label">Grapes</label><br />
+                </div><!--question-->
                 <div class="question hide">
-                    <p>Question Two</p>
-                    <label for="question_two" class="question_label">Answer One</label>
-                    <input type="radio" name="question_two" class="question_radio" value="Answer One" data-correct="no"/>
-                    <label for="question_one" class="question_label">Answer Two</label>
-                    <input type="radio" name="question_two" class="question_radio" value="Answer Two" data-correct="yes"/>
-                    <label for="question_one" class="question_label">Answer Three</label>
-                    <input type="radio" name="question_two" class="question_radio" value="Answer Three" data-correct="no"/>
-                    <label for="question_one" class="question_label">Answer Four</label>
-                    <input type="radio" name="question_two" class="question_radio" value="Answer Four" data-correct="no"/>
-                </div>
+                    <p>Allergies are mostly seen in which season?</p>
+                    <input type="radio" name="question_two" class="question_radio" value="Winter" data-correct="no"/>
+                    <label for="question_two" class="question_label">Winter</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Spring" data-correct="yes"/>
+                    <label for="question_one" class="question_label">Spring</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Fall" data-correct="no"/>
+                    <label for="question_one" class="question_label">Fall</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Summer" data-correct="no"/>
+                    <label for="question_one" class="question_label">Summer</label>
+                </div><!--question-->
+
+                <div class="question hide">
+                    <p>Cherry Blossoms are</p>
+                    <input type="radio" name="question_two" class="question_radio" value="Pink" data-correct="yes"/>
+                    <label for="question_two" class="question_label">Pink</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Red" data-correct="no"/>
+                    <label for="question_one" class="question_label">Red</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="White" data-correct="no"/>
+                    <label for="question_one" class="question_label">White</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Purple" data-correct="no"/>
+                    <label for="question_one" class="question_label">Purple</label>
+                </div><!--question-->
+
+                <div class="question hide">
+                    <p>Microbiology is the study of</p>
+                    <input type="radio" name="question_two" class="question_radio" value="Bacteria" data-correct="no"/>
+                    <label for="question_two" class="question_label">Bacteria</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Viruses" data-correct="no"/>
+                    <label for="question_one" class="question_label">Viruses</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Protozoa" data-correct="no"/>
+                    <label for="question_one" class="question_label">Protozoa</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="All of the above" data-correct="yes"/>
+                    <label for="question_one" class="question_label">All of the above</label>
+                </div><!--question-->
+
+                <div class="question hide">
+                    <p>Whales are</p>
+                    <input type="radio" name="question_two" class="question_radio" value="Mammals" data-correct="yes"/>
+                    <label for="question_two" class="question_label">Mammals</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Amphibians" data-correct="no"/>
+                    <label for="question_one" class="question_label">Amphibians</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="Reptiles" data-correct="no"/>
+                    <label for="question_one" class="question_label">Reptiles</label><br />
+                    <input type="radio" name="question_two" class="question_radio" value="All of the above" data-correct="no"/>
+                    <label for="question_one" class="question_label">All of the above</label>
+                </div><!--question-->
 
                 <p id="answer_value"></p>
                 
                 <button class="button" id="start_quiz" name="">Click here to start the quiz.</button>
             </div><!--end of question-->
-            <button class="button hide" id="next_question" name="">Next question</button>
-            <button class="button hide" id="submit" name="">Submit</button>
-            
+            <div class="final_page hide">
+                <p>You are all done!</p>
+                <form name="score_submit">
+                    <label>Enter your Initials: </label><input type="text" name="initials" class="initials" /><br />
+                    <input type="submit" class="button" name="Submit" id="submit" />
+                </form>
+            </div><!--final_page-->
+            <div class="show_scores hide">
+                <p>High Scores: <span class="display_score"></span></p>
+            </div><!--show_scores-->
         </section><!--end of quiz section-->
 
         <script src="assets/js/scripts.js" async defer></script>
